@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Sequence Game for Children</title>
+    <link rel="stylesheet" href="style.css"> <!-- 引用外部CSS -->
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="videos/background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <h1>Number Sequence Game for Children</h1>
+    <!-- 将提示文本放入带有 id="hintBox" 的 div 中 -->
+    <div id="hintBox">
+    Click "Start" to view the numbers, then click "Cover Numbers" to hide them.
+    Click the numbers in the correct order (1 to 9) to win!
+    </div>
+
+    <button id="startButton">Start</button>
+    <button id="coverButton">Cover Numbers</button>
+    <button id="restartButton">Restart</button>
+    <div id="timer">Time: 0s</div>
+    <div id="gameBoard"></div>
+
+    <!-- 音频文件 -->
+    <audio id="backgroundMusic" loop>
+        <source src="audio/background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="correctSound">
+        <source src="audio/correct-sound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="wrongSound">
+        <source src="audio/wrong-sound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script> <!-- 引用外部JavaScript文件 -->
+</body>
+</html>
